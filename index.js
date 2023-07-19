@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const URL = "https://www.fruityvice.com/api/fruit";
+    const proxyUrl = 'https://cors-anywhere.herokuapp.com';
+    const apiUrl = 'https://www.fruityvice.com/api/fruit';
     const button = document.getElementById("button");
     const input = document.getElementById("fruitIdInput");
     const result = document.getElementById("result");
@@ -8,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function () {
         e.preventDefault();
         const id = input.value;
 
-        fetch(`${URL}/${id}`)
+        fetch(`${proxyUrl}/${apiUrl}/${id}`)
             .then((response) => response.json())
             .then((json) => {
 
