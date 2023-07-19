@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: ivory;
+    
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(1fr, 3);
+    grid-template-areas: "h"
+        "h";
+    grid-area: h;
+    background-color: beige;
+    border: 1px solid chocolate;
+    margin: 5px;
+}
+
+.header {
+    text-align: center;
+}
+
+.button-link {
+    border: 2px solid chocolate;
+    border-radius: 5px;
+    background: beige;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    padding: 1px;
+    margin: 5px;
+}
+
+.button-link:hover {
+    border: 2px solid;
+    background: burlywood;
+}
+
+@media(max-width: 768px) {
+    .header {
+        text-align: left;
+    }
+}
